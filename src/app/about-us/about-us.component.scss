@@ -1,0 +1,93 @@
+
+.main-div{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;   
+    .about {
+        display: flex;
+        flex-direction: column;
+        background-image: url(../../assets/images/about.jpg);
+        background-position: left;
+        padding: 100px 0;
+        .about-sec{
+            h2{
+                font-size: 60px;  
+                color: #3a4259;
+                font-family: 'SF-Pro-Display-Thin';
+            }
+          
+        }
+    }
+    .middle-div{
+        display: flex;
+        flex-direction: column;
+        padding: 80px 0;
+        background-color: #ebecf2;
+        .about-main{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .left-about{
+                display: flex;
+                width: 50%;
+                margin-right: 50px;
+                img{
+                    width: 100%;
+                    border: 1px solid #dbdcdf;
+                    padding: 4px;
+                    border-radius: 4px;                
+                }
+            }
+            .right-about{
+                display: flex;
+                flex-direction: column;
+                width: 50%;
+                h2{
+                  
+                    color: #3a4259;
+                    font-family: 'SF-Pro-Display-Thin';
+                    font-size: 40px;
+                    margin-bottom: 20px;
+                }
+                p{
+                    font-size: 15px;                   
+                    color: #878a9a;
+                }
+            }
+        }
+      
+    }
+    .reasons-div{
+        display: flex;
+        flex-direction: column;
+        padding: 80px 0;
+        background-color: #5e92e0;
+        h2{
+            font-size: 40px;  
+            color: #ffffff;
+            font-family: 'SF-Pro-Display-Thin';
+            justify-content: center;
+            display: flex;
+            margin-bottom: 50px;
+        }
+        .reasons-list{
+            display: grid;
+            gap: 5%;
+            grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));          
+            .reasons-sub{
+             display: flex;
+             flex-direction: column;
+             h3{
+                font-size: 18px;
+                font-family: 'Satoshi-Medium';
+                color: #ffffff;               
+                }
+                p{
+                    font-size: 12px;
+                    text-align: left;
+                    color: #ffffff;
+                }
+            }            
+        }
+    }
+}

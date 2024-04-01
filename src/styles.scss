@@ -1,0 +1,95 @@
+/* You can add global styles to this file, and also import other style files */
+// fonts
+@font-face {
+    font-family: 'Satoshi-Bold';
+    src: url('/assets/fonts/Satoshi-Bold.otf');
+  }
+  
+  @font-face {
+    font-family: 'Satoshi-Light';
+    src: url('/assets/fonts/Satoshi-Light.otf');
+  }
+  
+  @font-face {
+    font-family: 'Satoshi-Medium';
+    src: url('/assets/fonts/Satoshi-Medium.otf');
+  }
+  
+  @font-face {
+    font-family: 'Satoshi-Regular';
+    src: url('/assets/fonts/Satoshi-Regular.otf');
+  }
+
+  @font-face {
+    font-family: 'SF-Pro-Display-Medium';
+    src: url('/assets/fonts/SF-Pro-Display-Medium.otf');
+  }
+
+  @font-face {
+    font-family: 'SF-Pro-Display-Regular';
+    src: url('/assets/fonts/SF-Pro-Display-Regular.otf');
+  }
+ 
+  @font-face {
+    font-family: 'SF-Pro-Display-Thin';
+    src: url('/assets/fonts/SF-Pro-Display-Thin.otf');
+  }
+  
+  body{
+      font-family: 'Satoshi-Regular';
+      padding: 0;margin: 0;
+      background-color: #ebecf200;
+  }
+  .container {
+     
+      width: 100%;
+      max-width: 1200px; /* Adjust the maximum width as needed */
+      margin: 0 auto; /* Center the container horizontally */
+      padding: 0 20px; /* Add padding to the container */
+    
+      /* Example of styles for different screen sizes using media queries */
+      /* Adjust the styles as needed */
+    
+      /* Small devices (landscape phones, 576px and up) */
+      @media (min-width: 576px) {
+        padding: 0 30px;
+      }
+    
+      /* Medium devices (tablets, 768px and up) */
+      @media (min-width: 768px) {
+        padding: 0 40px;
+      }
+    
+      /* Large devices (desktops, 992px and up) */
+      @media (min-width: 992px) {
+        padding: 0 60px;
+      }
+    
+      /* Extra large devices (large desktops, 1200px and up) */
+      @media (min-width: 1200px) {
+        padding: 0 80px;
+      }
+    }
+    
+  /* Importing Bootstrap SCSS file. */
+  // @import "./node_modules/bootstrap/scss/bootstrap";
+  .owl-carousel .item {
+      background: #4DC0B5;
+      text-align: center;
+      padding: 50px 0;
+      margin: 5px;
+      color: #FFF;
+      border-radius: 3px;
+      display: inline-block;
+    }
+/* Importing Bootstrap SCSS file. */
+@import "~bootstrap/scss/bootstrap";
+
+/* Importing Datepicker SCSS file. */
+@import "~ngx-bootstrap/datepicker/bs-datepicker";
+
+
+.carousel{
+  position: relative;
+  z-index: 1111;
+}

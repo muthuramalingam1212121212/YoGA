@@ -1,0 +1,35 @@
+header {
+    display: flex;
+    width: 100%;
+    background-color: rgba(78, 75, 102, 0.6);
+    padding: 0;
+    height: 60px;
+    align-items: center;    
+    &.navi_scrolled{
+        position: sticky;
+        z-index: 999;
+        top: 0;
+    }
+    .head {
+        justify-content: space-between;
+        display: flex;
+        width: 100%;
+
+        .nav {
+            a {
+                color: black; // Default link color
+                text-decoration: none; // Remove default underline
+                margin-right: 20px; // Adjust spacing between links
+                font-size: 15px;
+                &:hover {
+                    color: #cd7399; // Change link color on hover
+                }
+
+                &.active {
+                    color: #ffffff; 
+                    font-family: 'Satoshi-Bold';// Change link color when active
+                }
+            }
+        }
+    }
+}

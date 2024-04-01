@@ -1,0 +1,43 @@
+<div class="main-div">
+    <div class="container">
+        <div class="gallery">
+            <!-- <img src="assets/images/class1.jpg" alt="first slide">
+            <img src="assets/images/bg1.jpg" alt="first slide">
+            <img src="assets/images/yoga.jpg" alt="first slide">
+            <img src="assets/images/about.jpg" alt="first slide">
+            <img src="assets/images/yoga-about.jpg" alt="first slide">
+            <img src="assets/images/bg-trainers.jpg" alt="first slide">
+            <img src="assets/images/class3.jpg" alt="first slide"> -->
+            <!-- <img *ngFor="let image of images" [src]="image.src" [alt]="image.alt" (click)="openModal(image)"> -->
+            <!-- <img *ngFor="let image of images" [src]="image.src" [alt]="image.alt" (click)="openModal(image)"> -->
+            <img *ngFor="let image of images" [src]="image.src" alt="image" (click)="onClick($event)">
+
+        </div>
+    </div>
+</div>
+
+<!-- <ng-template #modalTemplate let-modalRef="bsModalRef">
+  
+    <div class="modal-body">
+      <img [src]="img" alt="Modal Image">
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-secondary" (click)="closeModal()">Close</button>
+    </div>
+  </ng-template> -->
+
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" #closebutton class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Modal Header</h4>
+      </div>
+      <div class="modal-body">
+      <img
+      src="{{imgSrc}}"
+      style="max-width:100%;cursor:pointer"
+      class="modal-hover-opacity"
+    /> 
+      </div>
+    </div>
+  </div>
