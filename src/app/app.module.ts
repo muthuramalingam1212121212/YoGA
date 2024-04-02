@@ -13,6 +13,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CarouselModule } from 'ngx-bootstrap/carousel';
 import { GalleryComponent } from './gallery/gallery.component';
 import { ModalModule, BsModalService } from 'ngx-bootstrap/modal';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -31,6 +32,7 @@ import { ModalModule, BsModalService } from 'ngx-bootstrap/modal';
     CommonModule,
     FormsModule,
     ModalModule
+    
   ],
   providers: [BsModalService],
   bootstrap: [AppComponent]

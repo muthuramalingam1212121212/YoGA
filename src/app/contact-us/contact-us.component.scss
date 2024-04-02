@@ -1,0 +1,75 @@
+.main-div {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;   
+    background-color: #ebecf2;
+    .about {
+        display: flex;
+        flex-direction: column;
+        background-image: url(../../assets/images/about.jpg);
+        background-position: left;
+        padding: 100px 0;
+        .about-sec{
+            h2{
+                font-size: 60px;  
+                color: #3a4259;
+                font-family: 'SF-Pro-Display-Thin';
+            }
+          
+        }
+    }
+    .contact{
+        display: flex;
+        width: 100%;
+        padding: 100px 0;
+        .contact-left{
+            display: flex;
+            width: 50%;
+            flex-direction: column;
+            justify-content: center;
+            h2{
+                font-size: 20px;              
+                color: #cd7399;
+                font-family: 'SF-Pro-Display-Medium';
+               
+            }
+            p{
+                color: #5e92e0;
+                font-size: 15px;              
+                font-family: 'SF-Pro-Display-Medium';
+            }
+            span{
+                color: #6f6e8c;
+                font-size: 14px;
+            }
+        }
+        .contact-right{
+            display: flex;
+            width: 50%;
+            flex-direction: column;
+            h2{
+                font-size: 60px;  
+                color: #3a4259;
+                font-family: 'SF-Pro-Display-Thin';
+            }
+            form{
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                .form-control{
+                    margin: 10px 0;    
+                    border: 2px solid #ffffff;  
+                    padding: 10px; 
+                    background-color: transparent;
+                    border-radius: 2px;
+                }
+                button{
+                    background-color: #cd7399!important;
+                    color: #ffffff;
+                    border: 1px solid #cd7399!important; 
+                }
+            }
+        }
+    }
+    
+}
